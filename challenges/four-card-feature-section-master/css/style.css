@@ -1,0 +1,169 @@
+:root {
+    /* Layout */
+    --mobile-width: 23.4375rem;
+    --destop-width: 90rem;
+
+    --card-height: 250px;
+
+    /* colors */
+    --card-top-border-red: hsl(0, 78%, 62%);
+    --card-top-border-cyan: hsl(180, 62%, 55%);
+    --card-top-border-orange: hsl(34, 97%, 64%);
+    --card-top-border-blue: hsl(212, 86%, 64%);
+    
+    /* font */
+    --ff-main: 'Poppins';
+    
+    --fs-main-title: clamp(1rem, 0.8133rem + 0.6639vw, 1.6rem);
+    --fs-main-title-body: 1.125rem;
+    --fs-card-title: clamp(1rem, 0.6622rem + 0.4898vw, 1.25rem);
+    --fs-body: 0.9375rem;
+
+    --fw-extralight: 200;
+    --fw-regular: 400;
+    --fw-semibold: 600;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+.container {
+    width: clamp(var(--mobile-width), 3.0612rem + 72.449vw, var(--destop-width));
+
+    margin: 0 auto;
+}
+
+.layout {
+    display: flex;
+    gap: 1.5rem;
+
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    height: var(--card-height);
+
+    border-radius: 5px;
+    border-top: solid var(--card-top-border-cyan) 4px;
+
+    box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.2);
+
+    padding: 2rem;
+}
+
+
+.column:nth-child(1) > .card {
+    border-top: solid var(--card-top-border-cyan) 4px;
+}
+
+.column:nth-child(2) > .card:nth-child(1) {
+    border-top: solid var(--card-top-border-red) 4px;
+}
+
+.column:nth-child(2) > .card:nth-child(2) {
+    border-top: solid var(--card-top-border-orange) 4px;
+}
+
+.column:nth-child(3) > .card {
+    border-top: solid var(--card-top-border-blue) 4px;
+}
+
+.card-layout {
+    position: relative;
+}
+
+.title-head {
+    font-family: var(--ff-main);
+    font-size: var(--fs-main-title);
+
+    padding: 2.5rem 0 1.5rem 0;
+
+    /* background-color: brown; */
+
+    width: 70%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.title-head h1 span:nth-child(1) {
+    font-weight: var(--fw-extralight);
+}
+
+.title-head h1 span:nth-child(2) {
+    font-weight: var(--fw-semibold);
+}
+
+.title-body {
+    font-family: var(--ff-main);
+    font-size: var(--fs-body);
+
+    width: 70%;
+
+    margin: 0 auto;
+
+    padding: 0 0 3rem 0;
+
+    text-align: center;
+}
+
+
+.card-title-head {
+    font-family: var(--ff-main);
+    font-size: var(--fs-card-title);
+}
+
+.card-body {
+    font-family: var(--ff-main);
+    font-size: var(--fs-body);
+}
+
+
+.icon {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+
+}
+
+footer {
+    padding: 2rem 0;
+
+    text-align: center;
+}
+
+.attribution {
+    font-family: var(--ff-main);
+}
+
+
+@media (width < 800px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .title-head {
+        width: 100%;
+    }
+
+    .title-body {
+        width: 100%;
+    }
+}
