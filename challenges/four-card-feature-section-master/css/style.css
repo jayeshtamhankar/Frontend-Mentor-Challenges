@@ -1,7 +1,62 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.2;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+  
+a {
+    text-decoration: none;
+}
+
 :root {
     /* Layout */
-    --mobile-width: 23.4375rem;
-    --destop-width: 90rem;
+    --mobile-width: 350px;
+    --destop-width: 1440px;
 
     --card-height: 250px;
 
@@ -10,11 +65,16 @@
     --card-top-border-cyan: hsl(180, 62%, 55%);
     --card-top-border-orange: hsl(34, 97%, 64%);
     --card-top-border-blue: hsl(212, 86%, 64%);
+
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
     
     /* font */
-    --ff-main: 'Poppins';
+    --ff-main-challenge: 'Poppins';
+    --ff-main: 'Rubik', sans-serif;
     
-    --fs-main-title: clamp(1rem, 0.8133rem + 0.6639vw, 1.6rem);
+    --fs-main-title: clamp(1.75rem, 1.5092rem + 1.1009vw, 2.5rem);
     --fs-main-title-body: 1.125rem;
     --fs-card-title: clamp(1rem, 0.6622rem + 0.4898vw, 1.25rem);
     --fs-body: 0.9375rem;
@@ -23,12 +83,8 @@
     --fw-regular: 400;
     --fw-semibold: 600;
 
-}
+    --right: clamp(0.8125rem, -2.3503rem + 14.4586vw, 15rem);
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 header, main, footer {
@@ -36,9 +92,45 @@ header, main, footer {
 }
 
 .container {
-    width: clamp(var(--mobile-width), 3.0612rem + 72.449vw, var(--destop-width));
+    width: 80%;
+
+    max-width: var(--destop-width);
+    min-width: var(--mobile-width);
 
     margin: 0 auto;
+}
+
+.title-head {
+    text-align: center;
+
+    padding: 4rem 0 2rem 0;
+}
+
+.title-head > h1 {
+    font-family: var(--ff-main-challenge);
+
+    font-size: var(--fs-main-title);
+}
+
+.title-head > h1 > span:nth-child(1) {
+    font-weight: var(--fw-extralight);
+}
+
+.title-head > h1 > span:nth-child(3) {
+    font-weight: var(--fw-semibold);
+}
+
+.title-body {
+    width: 50%;
+
+    margin: 0 auto;
+
+    padding: 0 0 4rem 0;
+
+    font-family: var(--ff-main-challenge);
+    font-size: var(--fs-body);
+
+    text-align: center;
 }
 
 .layout {
@@ -67,7 +159,6 @@ header, main, footer {
     padding: 2rem;
 }
 
-
 .column:nth-child(1) > .card {
     border-top: solid var(--card-top-border-cyan) 4px;
 }
@@ -88,69 +179,23 @@ header, main, footer {
     position: relative;
 }
 
-.title-head {
-    font-family: var(--ff-main);
-    font-size: var(--fs-main-title);
-
-    padding: 2.5rem 0 1.5rem 0;
-
-    /* background-color: brown; */
-
-    width: 70%;
-
-    margin: 0 auto;
-
-    text-align: center;
-}
-
-.title-head h1 span:nth-child(1) {
-    font-weight: var(--fw-extralight);
-}
-
-.title-head h1 span:nth-child(2) {
-    font-weight: var(--fw-semibold);
-}
-
-.title-body {
-    font-family: var(--ff-main);
-    font-size: var(--fs-body);
-
-    width: 70%;
-
-    margin: 0 auto;
-
-    padding: 0 0 3rem 0;
-
-    text-align: center;
-}
-
-
 .card-title-head {
-    font-family: var(--ff-main);
+    font-family: var(--ff-main-challenge);
     font-size: var(--fs-card-title);
+    font-weight: var(--fw-semibold);
+
+    padding: 0 0 1rem 0;
 }
 
 .card-body {
-    font-family: var(--ff-main);
+    font-family: var(--ff-main-challenge);
     font-size: var(--fs-body);
 }
-
 
 .icon {
     position: absolute;
     right: 1.5rem;
     bottom: 1.5rem;
-
-}
-
-footer {
-    padding: 2rem 0;
-
-    text-align: center;
-}
-
-.attribution {
-    font-family: var(--ff-main);
 }
 
 
@@ -166,4 +211,17 @@ footer {
     .title-body {
         width: 100%;
     }
+}
+
+footer {
+    padding: 4rem 0 8rem 0;
+}
+
+.attribution {
+    /* width: 70%; */
+
+    font-family: var(--ff-main-challenge);
+    font-size: var(--fs-body);
+
+    text-align: center;
 }

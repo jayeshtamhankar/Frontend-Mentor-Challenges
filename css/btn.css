@@ -1,0 +1,40 @@
+.btn-challenges {
+    position: fixed;
+    right: var(--right);
+    bottom: 2.5rem;
+}
+
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-challenges > a > .btn-icon {
+    display: inline-block;
+
+    background-color: #fff;
+    filter: invert(1);
+
+    border-radius: 50%;
+
+    height: 3rem;
+    width: 3rem;
+
+    position: relative;
+}
+
+.btn-challenges > a > .btn-icon > svg{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.btn-challenges > a > .btn-title {
+    font-family: var(--ff-main);
+    font-size: 1.5rem;
+    color: #000;
+}
