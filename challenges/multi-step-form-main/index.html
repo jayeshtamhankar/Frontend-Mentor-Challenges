@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container"></div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section>
+        <!-- Sidebar start -->
+
+        <div>
+          <span>1</span>
+          <span>Step 1</span>
+          <span>Your info</span>
+        </div>
+
+        <div>
+          <span>2</span>
+          <span>Step 2</span>
+          <span>Select plan</span>
+        </div>
+
+        <div>
+          <span>3</span>
+          <span>Step 3</span>
+          <span>Add-ons</span>
+        </div>
+
+        <div>
+          <span>4</span>
+          <span>Step 4</span>
+          <span>Summary</span>
+        </div>
+
+        <!-- Sidebar end -->
+      </section>
+      <section>
+
+        <!-- Step 1 start -->
+
+        <div class="step-one">
+          <div class="head">
+            <span>
+              Personal info
+            </span>
+            <span>
+              Please provide your name, email address, and phone number.
+            </span>
+          </div>
+          <div class="body">
+              <spam>
+                <label for="">Name</label>
+                <input type="text" name="" id="" placeholder="e.g. Stephen King">
+              </spam>
+              <spam>
+                <label for="">Email Address</label>
+                <input type="text" name="" id="" placeholder="e.g. stephenking@lorem.com">
+              </spam>
+              <spam>
+                <label for="">Phone Number</label> 
+                <input type="text" name="" id="" placeholder="e.g. +1 234 567 890">
+              </spam>
+          </div>
+        </div>
+
+        <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+
+        <div class="step-two">
+          <div class="head">
+            <span>
+              Select your plan
+            </span>
+            <span>
+              You have the option of monthly or yearly billing.
+            </span>
+          </div>
+          <div class="body">
+            <spam>
+              <span>
+                <img src="./assets/images/icon-arcade.svg" alt="">
+              </span>
+              <span>
+                <span>Arcade</span>
+                <span>$9/mo</span>
+              </span>
+            </spam>
+
+            <spam>
+              <span>
+                <img src="./assets/images/icon-advanced.svg" alt="">
+              </span>
+              <span>
+                <span>Advanced</span>
+                <span>$12/mo</span>
+              </span>
+            </spam>
+
+            <spam>
+              <span>
+                <img src="./assets/images/icon-pro.svg" alt="">
+              </span>
+              <span>
+                <span>Pro</span>
+                <span>$15/mo</span>
+              </span>
+            </spam>
+
+            <span>
+              <span>Monthly</span>
+              <input type="checkbox">
+              <span class="slider"></span>
+              <span>Yearly</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+
+        <div class="step-three">
+          <div class="head">
+            <span>
+              Pick add-ons
+            </span>
+            <span>
+              Add-ons help enhance your gaming experience.
+            </span>
+          </div>
+          <div class="body">
+            <span>
+              <span>
+                <input type="checkbox">
+              </span>
+            
+              <span>
+                <span>Online service</span>
+                <span>Access to multiplayer games</span>
+              </span>
+
+              <span>
+                <span>+$1/mo</span>
+              </span>
+            </span>
+
+            <span>
+              <span>
+                <input type="checkbox">
+              </span>
+            
+              <span>
+                <span>Larger storage</span>
+                <span>Extra 1TB of cloud save</span>
+              </span>
+
+              <span>
+                <span>+$2/mo</span>
+              </span>
+            </span>
+
+            <span>
+              <span>
+                <input type="checkbox">
+              </span>
+            
+              <span>
+                <span>Customizable Profile</span>
+                <span>Custom theme on your profile</span>
+              </span>
+
+              <span>
+                <span>+$2/mo</span>
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Step 3 end -->
+
+        <!-- Step 4 start -->
+        <div class="step-four">
+          <div class="head">
+            <span>Finishing up</span>
+            <span>Double-check everything looks OK before confirming.</span>
+          </div>
+
+          <!-- Dynamically add subscription and add-on selections here -->
+
+          <div class="body">
+            <span>
+              <span>
+                Arcade (yearly)
+                Change
+              </span>
+              <span>
+                Online service
+              </span>
+              <span>
+                Larger storage
+              </span>
+            </span>
+            <span>Total (per month/year)</span>
+          </div>
+        </div>
+
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+
+        <div class="step-five">
+          <span>
+            <img src="./assets/images/icon-thank-you.svg" alt="">
+          </span>
+          <span>
+            Thank you!
+          </span>
+          <span>
+            Thanks for confirming your subscription! We hope you have fun 
+            using our platform. If you ever need support, please feel free 
+            to email us at support@loremgaming.com.
+          </span>
+        </div>
+        
+        <!-- Step 5 end -->
+
+        <div class="footer">
+          <div class="btn-next">Go Back</div>
+          <div class="btn-next">Next Step</div>
+          <div class="btn-confirm">Confirm</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

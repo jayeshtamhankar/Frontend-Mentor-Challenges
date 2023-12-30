@@ -25,7 +25,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 
 ## Author
 
