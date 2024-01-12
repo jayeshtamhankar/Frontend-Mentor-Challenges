@@ -116,3 +116,205 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+  <div class="container">
+
+    <!-- Sidebar start -->
+
+    <div class="stages">
+      <div class="stage one">
+        <div class="icon">
+          <span class="stage-icon">1</span>
+        </div>
+        <div class="body">
+          <span class="stage-step">Step 1</span>
+          <br>
+          <span class="stage-title">Your info</span>
+        </div>
+      </div>
+      <div class="stage two">
+        <div class="icon">
+          <span class="stage-icon">2</span>
+        </div>
+        <div class="body">
+          <span class="stage-step">Step 2</span>
+          <br>
+          <span class="stage-title">Select plan</span>
+        </div>
+      </div>
+      <div class="stage three">
+        <div class="icon">
+          <span class="stage-icon">3</span>
+        </div>
+        <div class="body">
+          <span class="stage-step">Step 3</span>
+          <br>
+          <span class="stage-title">Add-ons</span>
+        </div>
+      </div>
+      <div class="stage four">
+        <div class="icon">
+          <span class="stage-icon">4</span>
+        </div>
+        <div class="body">
+          <span class="stage-step">Step 4</span>
+          <br>
+          <span class="stage-title">Summary</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar end -->
+
+    <div class="input-form">
+      <!-- Step 1 start -->
+      <div class="stage-form one-active">
+        <div class="stage-form-head">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+        <div class="stage-form-body">
+          <span>
+            <label for="">Name</label>
+            <input type="text" name="" id="" placeholder="e.g. Stephen King">
+          </span>
+          <span>
+            <label for="">Email Address</label>
+            <input type="text" name="" id="" placeholder="e.g. stephenking@lorem.com">
+          </span>
+          <span>
+            <label for="">Phone Number</label>
+            <input type="text" name="" id="" placeholder="e.g. +1 234 567 890">
+          </span>
+        </div>
+      </div>
+      <!-- Step 1 end -->
+
+      <!-- Step 2 start -->
+      <div class="stage-form two-">
+        <div class="stage-form-head">
+          <span>
+            <h1>Select your plan</h1>
+          </span>
+          <span>
+            <p>You have the option of monthly or yearly billing.</p>
+          </span>
+        </div>
+        <div class="stage-form-body">
+          <div class="card">
+            <span>
+              <img src="./assets/images/icon-arcade.svg" alt="">
+            </span>
+            <span>
+              <h3>Arcade</h3>
+              <p>$9/mo</p>
+              <p>2 monts free</p>
+            </span>
+          </div>
+          <div class="card">
+            <span>
+              <img src="./assets/images/icon-advanced.svg" alt="">
+            </span>
+            <span>
+              <h3>Advanced</h3>
+              <p>$12/mo</p>
+              <p>2 monts free</p>
+            </span>
+          </div>
+          <div class="card">
+            <span>
+              <img src="./assets/images/icon-pro.svg" alt="">
+            </span>
+            <span>
+              <h3>Pro</h3>
+              <p>$15/mo</p>
+              <p>2 monts free</p>
+            </span>
+          </div>
+          <div class="btn">
+            <span>Monthly</span>
+            <input type="checkbox">
+            <span class="slider"></span>
+            <span>Yearly</span>
+          </div>
+        </div>
+      </div>
+      <!-- Step 2 end -->
+
+      <!-- Step 3 start -->
+      <div class="stage-form three-">
+        <div class="stage-form-head">
+          <span>
+            <h1>Pick add-ons</h1>
+          </span>
+          <span>
+            <p>Add-ons help enhance your gaming experience.</p>
+          </span>
+        </div>
+        <div class="stage-form-body">
+          <div>
+            <input type="checkbox">
+            Online service
+            Access to multiplayer games
+            +$1/mo
+          </div>
+          <div>
+            <input type="checkbox">
+            Larger storage
+            Extra 1TB of cloud save
+            +$2/mo
+          </div>
+          <div>
+            <input type="checkbox">
+            Customizable Profile
+            Custom theme on your profile
+            +$2/mo
+          </div>
+        </div>
+      </div>
+      <!-- Step 3 end -->
+
+      <!-- Step 4 start -->
+      <div class="stage-form four-">
+        <div class="stage-form-head">
+          <span>
+            <h1>Finishing up</h1>
+          </span>
+          <span>
+            <p>Double-check everything looks OK before confirming.</p>
+          </span>
+        </div>
+        <div class="stage-form-body">
+          <h3>Arcade (yearly) </h3>
+          <p>Change</p>
+
+          <p>$9/mo</p>
+
+
+          Online service $9/mo
+          Larger storage $9/mo
+
+          Total (per month) $9/mo
+        </div>
+      </div>
+      <!-- Step 4 end -->
+
+      <!-- Step 5 start -->
+      <div class="stage-form five-">
+        <img src="./assets/images/icon-thank-you.svg" alt="">
+
+        Thank you!
+
+        Thanks for confirming your subscription! We hope you have fun 
+        using our platform. If you ever need support, please feel free 
+        to email us at support@loremgaming.com.
+      </div>
+      <!-- Step 5 end -->
+      
+      <div class="btn-section">
+        <div class="btn-back">Go Back</div>
+        <div class="btn-next">Next Step</div>
+        <div class="btn-confirm">Confirm</div>
+      </div>
+    </div>
+  </div>
