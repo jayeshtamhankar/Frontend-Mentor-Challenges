@@ -15,45 +15,79 @@ body {
     background-color: var(--Light-gray);
 }
 
-.container {
-    width: 85%;
+main, footer {
+    .container { 
+        width: 80%;
+    
+        margin: 0 auto;
+    }
+}
 
-    margin: 0 auto;
-    
-    .qr-code {
-        width: 345px;
-        max-width: 400px;
-
-        margin: 6rem auto;
-    
-        background-color: var(--White);
-    
-        padding: 1rem;
-    
-        border-radius: 10px;
-
-        .head {
-            border-radius: 5px;
-            overflow: hidden;
+@media ( width < 450px ) {
+    main, footer {
+        .container { 
+            width: 90%;
+        
+            margin: 0 auto;
         }
+    }
+}
 
-        .body {
-            padding: 2rem 0;
+main {
+    .container {
 
-            text-align: center;
-
-            h3 {
-                font-family: var(--ff-main);
-                font-size: 1.5rem;
-                font-weight: var(--fw-bold);
-                color: var(--Dark-blue);
+        .qr-code {
+            width: 345px;
+            max-width: 400px;
+    
+            margin: 10rem auto;
+        
+            background-color: var(--White);
+        
+            padding: 1rem;
+        
+            border-radius: 10px;
+    
+            .head {
+                border-radius: 5px;
+                overflow: hidden;
             }
+    
+            .body {
+                padding: 2rem 0;
+    
+                text-align: center;
+    
+                h3 {
+                    font-family: var(--ff-main);
+                    font-size: 1.5rem;
+                    font-weight: var(--fw-bold);
+                    color: var(--Dark-blue);
+                }
+    
+                p {
+                    margin-top: 1rem;
+                    font-family: var(--ff-main);
+                    font-size: 1rem;
+                    color: var(--Grayish-blue);
+                }
+            }
+        }
+    }
+}
 
+footer {
+    .container {
+        .attribution {
+            text-align: center;
             p {
-                margin-top: 1rem;
                 font-family: var(--ff-main);
                 font-size: 1rem;
-                color: var(--Grayish-blue);
+                color: var(--Dark-blue);
+
+                a {
+                    color: #0010eb;
+                }
             }
         }
     }

@@ -1,3 +1,7 @@
+:root {
+    --right: clamp(0.8125rem, -2.3503rem + 14.4586vw, 15rem);
+}
+
 .btn-challenges {
     position: fixed;
     right: var(--right);

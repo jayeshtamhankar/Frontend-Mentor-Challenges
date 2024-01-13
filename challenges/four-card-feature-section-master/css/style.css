@@ -83,7 +83,7 @@ a {
     --fw-regular: 400;
     --fw-semibold: 600;
 
-    --right: clamp(0.8125rem, -2.3503rem + 14.4586vw, 15rem);
+    /* --right: clamp(0.8125rem, -2.3503rem + 14.4586vw, 15rem); */
 }
 
 header, main, footer {
