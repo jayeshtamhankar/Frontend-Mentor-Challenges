@@ -50,7 +50,9 @@ main {
 
             box-shadow: 10px 10px;
 
-            margin: 13rem auto;
+            margin: 0 auto;
+            margin-top: 15rem;
+            margin-bottom: 5rem;
 
             .card-thumbnail {
                 border-radius: 10px;
