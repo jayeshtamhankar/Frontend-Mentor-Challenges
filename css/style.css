@@ -31,7 +31,7 @@
 
 body {
     background-color: var(--main-color);
-    background-image: url("/img/bg.svg");
+    background-image: url("https://jayeshtamhankar.github.io/Frontend-Mentor-Challenges/img/bg.svg");
 }
 
 header, main, footer {
